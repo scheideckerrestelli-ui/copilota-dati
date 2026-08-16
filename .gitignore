@@ -1,18 +1,18 @@
-# Cancello deliberato, non una svista — messo il 2026-08-16.
+# L'INDIRIZZARIO E' PUBBLICATO dal 2026-08-16 (geo-*.json e civ-*.json, 86,0 MB).
 #
-# `mkpwa.py` copia qui dentro anche i file dell'INDIRIZZARIO (geo-*.json e civ-*.json,
-# vie e civici per la ricerca), esattamente come i data-*.json. Sono 86 MB. Il comando
-# di pubblicazione documentato e' `git add -A`, quindi chiunque pubblichi una qualunque
-# altra cosa se li porta dietro senza accorgersene: il sito passerebbe da 325 a 411 MB
-# (il limite di GitHub Pages e' 1 GB) e quei file entrerebbero in storia git per sempre,
-# da cui non si tolgono piu'.
+# Il cancello che stava qui era giusto quando i file non erano pronti, ma nel frattempo
+# il manifesto aveva gia' cominciato a indicarli: `regions.json` prometteva `geo` e `civ`
+# per 16 regioni su 17 e TUTTI rispondevano 404. La ricerca per indirizzo ricadeva sui
+# soli nomi dentro il dataset di guida — che sono una frazione — e da fuori sembrava
+# semplicemente che l'app non trovasse le vie. Se ne e' accorto Tiago guidando, non il
+# codice: nessun errore, nessun sintomo, solo ricerche che non davano risultati.
 #
-# Non e' che non li vogliamo: la ricerca per indirizzo li vuole. E' che vanno pubblicati
-# QUANDO SONO PRONTI e perche' qualcuno lo ha deciso, non in coda a un push che parlava
-# d'altro. Intanto la ricerca funziona lo stesso, ricadendo sui nomi di via dentro gli
-# archi (in Umbria 9.078 dopo che le residenziali sono entrate nel grafo).
+# LEZIONE, che vale oltre questo file: un cancello sui DATI e un manifesto che li
+# ANNUNCIA sono due cose che vanno cambiate insieme. Se si rimette un cancello qui,
+# si toglie nello stesso momento la voce dal manifesto — o si torna a promettere
+# file che non ci sono.
 #
-# PER PUBBLICARLI: cancella queste due righe, controlla che i file siano completi per
-# tutte le regioni in ORDER, e spingi i dati PRIMA dell'app come sempre.
-geo-*.json
-civ-*.json
+# REGOLA CHE RESTA: in questo repo si elencano i file da pubblicare, mai `git add -A`.
+# Il sito e' servito per intero da GitHub Pages (limite 1 GB) e in git i dataset non si
+# cancellano piu' dalla storia. Al 2026-08-16: 262,8 MB di tracciati + 86,0 di
+# indirizzario = 348,8 MB.
